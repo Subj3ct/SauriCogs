@@ -621,7 +621,7 @@ class CookieStore(Cog):
 
     @commands.command()
     @commands.guild_only()
-    async def inventory(self, ctx: commands.Context):
+    async def cinventory(self, ctx: commands.Context):
         """See all items you own."""
         inventory = await self.config.member(ctx.author).inventory.get_raw()
 
