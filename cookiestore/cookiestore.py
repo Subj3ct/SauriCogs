@@ -411,7 +411,7 @@ class CookieStore(Cog):
 
     @commands.command()
     @commands.guild_only()
-    async def shop(self, ctx: commands.Context):
+    async def cshop(self, ctx: commands.Context):
         """Display the cookie store."""
         enabled = await self.config.guild(ctx.guild).enabled()
         if enabled is False:
